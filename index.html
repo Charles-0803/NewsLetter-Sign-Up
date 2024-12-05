@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Define character encoding for the document -->
+  <meta charset="UTF-8">
+
+  <!-- Ensure proper rendering and touch zooming on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to the favicon for the site -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Page title -->
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Attribution styles for the footer -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Main content starts here -->
+  <main>
+
+    <!-- Newsletter sign-up form section -->
+    <section class="container">
+
+      <!-- Form container with heading and list of benefits -->
+      <div class="form__container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <!-- Sign-up form -->
+        <form>
+          <!-- Label and error message container -->
+          <div class="labels">
+            <label for="email"> Email address </label>
+            <p class="error">Valid email required</p>
+          </div>
+
+          <!-- Input field for email -->
+          <input type="text" id="email" placeholder="email@company.com" />
+
+          <!-- Submit button -->
+          <button>Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+
+      <!-- Image container for desktop and mobile images -->
+      <div class="image__container">
+        <img
+          class="image__desktop"
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt="desktop image ui"
+        />
+        <img
+          class="image__mobile"
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="mobile image ui"
+        />
+      </div>
+    </section>
+    <!-- End of sign-up form -->
+
+    <!-- Success message modal section -->
+    <section class="modal">
+      <div class="modal__container">
+
+        <!-- Modal content: success icon, heading, and message -->
+        <div>
+          <img src="assets/images/icon-success.svg" alt="success icon" />
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <output id="user__email"></output>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+        </div>
+
+        <!-- Button to dismiss the modal -->
+        <button class="modal__close">Dismiss message</button>
+      </div>
+    </section>
+    <!-- End of success message modal -->
+
+  </main>
+
+  <!-- Link to the JavaScript file -->
+  <script src="script.js"></script>
+  
+ 
+</body>
+</html>
